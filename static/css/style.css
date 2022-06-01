@@ -1,0 +1,90 @@
+header {
+    position: relative;
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#acount {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+#signup, #login {
+    color: lightslategray;
+    text-decoration: none;
+}
+#signup:hover, #login:hover {
+    color: #556677;
+}
+
+header nav li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+header nav li a {
+    color: dimgrey;
+    text-decoration: none;
+    padding: 0 5px;
+}
+header nav li a:hover {
+    border-bottom: 1px solid salmon;
+}
+
+#new-article {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+main {
+    margin: 0 30px;
+    text-align: center;
+}
+
+#item {
+    display: flex;
+}
+.article {
+    width: 30%;
+    border: 1px solid #fff;
+    margin: 0 20px;
+    text-decoration: none;
+    color: #556677;
+}
+
+main {
+    text-align: center;
+}
+h1, h2 {
+    color: #556677;
+}
+
+.update, .delete {
+    text-decoration: none;
+    color:dimgrey;
+}
+
+.back {
+    text-decoration: none;
+    color: dimgrey;
+    display: block;
+    margin: 30px 0 0 0;
+}
+
+
+footer {
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+
+/* 背景 */
+#particles-js{ 
+    position:fixed;/*描画固定*/
+    z-index:-1;/*描画を一番下に*/
+    width: 100%;
+    height: 100%;
+    background-color:antiquewhite;/*背景色*/
+  }

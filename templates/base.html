@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask blog</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <!-- particles.js container --> <div id="particles-js"></div> <!-- stats - count particles -->  <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="../static/js/particles.js"></script>
+    
+    <header>
+        <h1>Flask blog</h1>
+        <div id="acount">
+            <a href="/signup" role="button" id="signup">新規登録</a>
+            <a href="/login" role="button" id="login">ログイン</a>    
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="/">ホーム</a></li>
+                <li><a>▶︎カテゴリ1</a></li>
+                <li><a>▶︎カテゴリ2</a></li>
+                <li><a>▶︎カテゴリ3</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    {% block content %} {% endblock %}
+    <footer>
+        <p><small>Copy right!</small></p>
+    </footer>
+</body>
+</html>

@@ -1,15 +1,22 @@
-<!DOCTYPE html>
-<html lang="jp">
 <head>
-    <meta charset="UTF-8">
-    <title>Flaskblog</title>
+    
 </head>
-<body>
-    <h1>Flask blog</h1>
-    <h2>ホーム画面</h2>
+{% extends "base.html" %} {% block content %}
+<main>
 
-    <!-- url_for エンドポイントからそのURLを生成する関数 -->
-    <a href="{{url_for('article1')}}">記事1へ</a>   
-    <a href="{{url_for('article2')}}">記事2へ</a>
-</body>
-</html>
+    <div id="new-article"><a href="/create" role="button"><img src="https://img.icons8.com/ios/50/undefined/create-new.png"/></a></div>
+
+    <h2>新着記事</h2>
+    <div id="item">
+        {% for post in posts %}
+        <a href="/{{post.id}}/view" role=button class="article">
+            <div>
+                <h2>{{post.title}}</h2>
+                <p>- 作成日時：{{post.created_at}}</p>
+                <p>- {{post.body}}</p>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</main>
+{% endblock %}
